@@ -9,33 +9,49 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Logo de la pagina -->
     <link rel="icon" href="../desafios/DIE3.jpg">
+    <!-- estilos bootstrap -->
     <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.css">
     <link rel="stylesheet" href="./CSS/estilos.css">
     <title>Perez Juan Cruz Board Games Reseñas</title>
 </head>
 
 <body>
-    <header class="b-example-divider">
-        <h1>Board Games Reseñas</h1>
-        <nav>
-            <div class="container">
-                <div class="row row-cols-5">
-                    <div class="col"><a href="../desafios/index.html">inicio</a></div>
-                    <div class="col"><a href="./webpage/reseñas.html">reseñas</a></div>
-                    <div class="col"><a href="./webpage/galeria.html">galeria</a></div>
-                    <div class="col"><a href="./webpage/contacto.html">contacto</a></div>
+    <body class="themed-grid-col">
+        <header class="b-example-divider">
+            <h1>Board Games Reseñas</h1>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../desafios/index.html">Board games</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../desafios/index.html">inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../desafios/webpage/reseñas.html">reseñas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../desafios/webpage/galeria.html">galeria</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../desafios/webpage/contacto.html">contacto</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-            </div>
-        </nav>
+              </nav>
     </header>
     <form>
         <div class="col-md-4">
-            <label for="validationCustom01" class="form-label">First name</label>
+            <label for="validationCustom01" class="form-label">Nombre</label>
             <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
             <div class="valid-feedback">
             </div>
             <div class="col-md-4">
-                <label for="validationCustom02" class="form-label">Last name</label>
+                <label for="validationCustom02" class="form-label">Apellido</label>
                 <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
                 <div class="valid-feedback">
                 </div>
@@ -47,18 +63,19 @@
                     <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     <div class="col-12">
-                        <button class="btn btn-primary" type="submit">Submit form</button>
+                        <button class="btn btn-primary" type="submit">Enviar</button>
                     </div>
                 </div>
     </form>
     <footer>
-        <div class="container">
-            <div class="row row-cols-3">
-                <div class="col"><a href=https://www.instagram.com/juan_ludomaniatico>Instagram</a></div>
-                <div class="col"><a href=https://www.facebook.com/juancruzrze>Facebook</a></div>
-                <div class="col"><a href=https://twitter.com/adc_juan>Twitter</a></div>
-            </div>
-        </div>
+        <div class="col">
+            <h5>Redes sociales</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="https://www.instagram.com/juan_ludomaniatico" class="nav-link p-0 text-muted">Instagram</a></li>
+              <li class="nav-item mb-2"><a href="https://www.facebook.com/juancruzrze" class="nav-link p-0 text-muted">Facebook</a></li>
+              <li class="nav-item mb-2"><a href="https://twitter.com/adc_juan" class="nav-link p-0 text-muted">Twitter</a></li>
+            </ul>
+          </div>
     </footer>
     <!-- javascript online -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
